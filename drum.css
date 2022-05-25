@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    background-color: rgb(0, 64, 255);
+}
+
+
+body{
+    text-align: center;
+}
+
+
+h1{
+    font-size: 150px;
+    color: white;
+    text-shadow: 5px 0 #da0463;
+}
+h2{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 0 #da0463;
+}
+
+
+.margin{
+    margin: 100px 25px 0px 25px;
+}
+
+
+.drum{
+    outline: none;
+    border: 10px solid white;
+    border-radius: 25px;
+    font-size: 45px;
+    color: #da0463;
+    text-shadow: 3px 0 white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+
+.q{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.w{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.e{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.r{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.t{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.a{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.s{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.d{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+.f{
+    background-image: url("images/drumkit.jpg");
+    margin: 10px;
+}
+
+
+.pressed{
+    box-shadow: 0 3px 4px 0 black;
+    opacity: 0.6;
+}
