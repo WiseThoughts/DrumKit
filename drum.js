@@ -1,19 +1,31 @@
 let numberOfButtons = document.querySelectorAll(".drum").length;
-let click = document.querySelectorAll(".drum");
+let drum = document.querySelectorAll(".drum");
 
-for(let i=0; i<numberOfButtons; i++){
-    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
-        let buttonInnerHTML=this.innerHTML;
-        makeSound(buttonInnerHTML);
-        buttonAnimation(buttonInnerHTML);
-    });
-};
 
+// for (let i=0; i<numberOfButtons; i++){
+//     document.querySelectorAll(".drum")[i].addEventListener("click", function(e){
+//         let buttonInnerHTML=this.innerHTML;
+//         makeSound(buttonInnerHTML);
+//         buttonAnimation(buttonInnerHTML);
+//     });
+// };
+
+
+// for (let i=0; i<drum.length; i++){
+//     drum[i].addEventListener("click", drumClick)
+// }
+
+// const drumClick = (e)=>{
+//     let innerHTML = e.target.innerHTML;
+//     buttonAnimation(innerHTML)
+//     makeSound(innerHTML)
+// }
 
 document.addEventListener("keypress", function(e){
     makeSound(e.key);
     buttonAnimation(e.key);
 });
+
 
 function makeSound(key){
     switch(key){
