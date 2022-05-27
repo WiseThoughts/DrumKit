@@ -9,6 +9,7 @@
 
 :root{
     --text: #00fff1;
+    --pink: #da0463;
 }
 
 
@@ -17,33 +18,50 @@ h1{
     text-align: center;
     margin: auto;
     font-size: 130px;
-    color: white;
-    text-shadow: 5px 0 #da0463;
+    color: black;
+    text-shadow: 5px 0 var(--pink);
     background: none;
-    background-color: #00fff1;
+    background-color: var(--text);
     padding: 20px;
     width: fit-content;
-    border: 2px solid #da0463;
-    box-shadow: 3px 3px 5px #00fff1;
+    border: 2px solid var(--pink);
+    box-shadow: 3px 3px 5px var(--text);
 }
 h2{
     display: flex;
     text-align: center;
     margin: auto;
     font-size: 50px;
-    color: white;
-    text-shadow: 2px 0 #da0463;
+    color: black;
+    text-shadow: 2px 0 var(--pink);
     background: none;
-    background-color: #00fff1;
+    background-color: var(--text);
     padding: 20px;
     width: fit-content;
-    border: 2px solid #da0463;
-    box-shadow: 3px 3px 5px #00fff1;
+    border: 2px solid var(--pink);
+    box-shadow: 3px 3px 5px var(--text);
+}
+h3{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    color: var(--text);
+    text-shadow: 2px 0 var(--pink);
+    padding: 20px;
+    width: fit-content;
 }
 
 
+.p2{
+    font-size: 19px;
+    width:auto;
+    height: auto;
+    text-shadow: none;
+}
+
 .margin{
-    margin: 100px 25px 0px 25px;
+    margin: 75px 25px 0px 25px;
 }
 
 
@@ -51,14 +69,16 @@ h2{
     outline: none;
     border: 5px solid black;
     border-radius: 25px;
-    box-shadow: 3px 3px 5px #00fff1, -3px -3px 5px rgb(0, 238, 255, 0.4);
+    box-shadow: 3px 3px 5px var(--text), -3px -3px 5px rgb(0, 238, 255, 0.4);
     font-size: 45px;
-    color: #da0463;
-    text-shadow: 3px 0 white;
-    width: 100px;
-    height: 100px;
+    color: var(--pink);
+    text-shadow: 2px 0 black;
+    width: 150px;
+    height: 150px;
     text-align: center;
     cursor: pointer;
+    background: none;
+    background-color:var(--text);
 }
 
 
@@ -101,7 +121,7 @@ h2{
 
 
 .pressed{
-    box-shadow: 3px 3px 5px #da0463;
+    box-shadow: 3px 3px 5px var(--pink);
     opacity: 0.6;
-    color: #00fff1;
+    color: var(--text);
 }
