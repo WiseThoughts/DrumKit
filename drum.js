@@ -1,25 +1,15 @@
 let numberOfButtons = document.querySelectorAll(".drum").length;
-let drum = document.querySelectorAll(".drum");
 
 
 // for (let i=0; i<numberOfButtons; i++){
-//     document.querySelectorAll(".drum")[i].addEventListener("click", function(e){
-//         let buttonInnerHTML=this.innerHTML;
-//         makeSound(buttonInnerHTML);
-//         buttonAnimation(buttonInnerHTML);
-//     });
+//     let drum = document.getElementById("drums")[i].addEventListener("click", function(e){
+//         const text = Element.innerHTML;
+//         console.log(text)
+//         makeSound(text)
+//         buttonAnimation(text);
+//     })
 // };
 
-
-// for (let i=0; i<drum.length; i++){
-//     drum[i].addEventListener("click", drumClick)
-// }
-
-// const drumClick = (e)=>{
-//     let innerHTML = e.target.innerHTML;
-//     buttonAnimation(innerHTML)
-//     makeSound(innerHTML)
-// }
 
 document.addEventListener("keypress", function(e){
     makeSound(e.key);
@@ -80,6 +70,7 @@ function makeSound(key){
     }
 }
 
+
 function buttonAnimation(currentKey){
     let activeButton=document.querySelector("."+currentKey);
         activeButton.classList.add("pressed");
@@ -87,3 +78,52 @@ function buttonAnimation(currentKey){
             activeButton.classList.remove("pressed");
         },100);
 }
+
+
+const boomClick = document.querySelector("q");
+const kickClick = document.querySelector("r");
+const clapClick = document.querySelector("w");
+const hihatClick = document.querySelector("e");
+const openhatClick = document.querySelector("t");
+const rideClick = document.querySelector("a");
+const snareClick = document.querySelector("s");
+const tinkClick = document.querySelector("d");
+const tomClick = document.querySelector("f");
+
+boomClick.addEventListener("click", () => {
+    boom.play();
+    boom.currentTime = 0;
+});
+
+kickClick.addEventListener("click", () => {
+    kick.play();
+    kick.currentTime = 0;
+});
+clapClick.addEventListener("click", () => {
+    clap.play();
+    clap.currentTime = 0;
+});
+hihatClick.addEventListener("click", () => {
+    hihat.play();
+    hihat.currentTime = 0;
+});
+openhatClick.addEventListener("click", () => {
+    openhat.play();
+    openhat.currentTime = 0;
+});
+rideClick.addEventListener("click", () => {
+    ride.play();
+    ride.currentTime = 0;
+});
+snareClick.addEventListener("click", () => {
+    snare.play();
+    snare.currentTime = 0;
+});
+tinkClick.addEventListener("click", () => {
+    tink.play();
+    tink.currentTime = 0;
+});
+tomClick.addEventListener("click", () => {
+    tom.play();
+    tom.currentTime = 0;
+});

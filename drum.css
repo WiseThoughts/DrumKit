@@ -12,7 +12,6 @@
 }
 
 
-
 h1{
     display: flex;
     text-align: center;
@@ -43,8 +42,6 @@ h2{
 }
 
 
-
-
 .margin{
     margin: 100px 25px 0px 25px;
 }
@@ -52,15 +49,16 @@ h2{
 
 .drum{
     outline: none;
-    border: 10px solid white;
+    border: 5px solid black;
     border-radius: 25px;
-    box-shadow: 3px 3px 5px #00fff1;
+    box-shadow: 3px 3px 5px #00fff1, -3px -3px 5px rgb(0, 238, 255, 0.4);
     font-size: 45px;
     color: #da0463;
     text-shadow: 3px 0 white;
     width: 100px;
     height: 100px;
     text-align: center;
+    cursor: pointer;
 }
 
 
