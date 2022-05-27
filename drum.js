@@ -30,64 +30,46 @@ function makeSound(key){
 
     case "q":
         let boom=new Audio("sounds/boom.wav");
-        boom.pause();
-        boom.currentTime = 0;
         boom.play();
         break;
 
     case "w":
         let clap=new Audio("sounds/clap.wav");
-        clap.pause();
-        clap.currentTime = 0;
         clap.play();
         break;
 
     case "e":
         let hiHat=new Audio("sounds/hihat.wav");
-        hiHat.pause();
-        hiHat.currentTime = 0;
         hiHat.play();
         break;
 
     case "r":
         let kick=new Audio("sounds/kick.wav");
-        kick.pause();
-        kick.currentTime = 0;
         kick.play();
         break;
 
     case "t":
         let openHat=new Audio("sounds/openhat.wav");
-        openHat.pause();
-        openHat.currentTime = 0;
         openHat.play();
         break;
 
     case "a":
         let ride=new Audio("sounds/ride.wav");
-        ride.pause();
-        ride.currentTime = 0;
         ride.play();
         break;
 
     case "s":
         let snare=new Audio("sounds/snare.wav");
-        snare.pause();
-        snare.currentTime = 0;
         snare.play();
         break;
 
     case "d":
         let tink=new Audio("sounds/tink.wav");
-        tink.pause();
-        tink.currentTime = 0;
         tink.play();
         break;
 
     case "f":
         let tom=new Audio("sounds/tom.wav");
-        tom.pause();
-        tom.currentTime = 0;
         tom.play();
         break;
 
